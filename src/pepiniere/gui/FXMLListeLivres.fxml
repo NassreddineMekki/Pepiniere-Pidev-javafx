@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="pepiniere.gui.FXMLListeLivresController">
+ 
+       <children>
+      <Pane layoutX="-1.0" prefHeight="222.0" prefWidth="1107.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            </children>
+      </Pane>
+   </children>
+   
+    <children>
+      <Pane layoutX="-1.0" prefHeight="222.0" prefWidth="1200.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            </children>
+      </Pane>
+      <TableView fx:id="tabview" layoutX="130.0" layoutY="250.0" prefHeight="200.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="image" prefWidth="75.0" text="image" />
+            <TableColumn fx:id="prix" prefWidth="75.0" text="prix" />
+            <TableColumn fx:id="quantite" prefWidth="75.0" text="quantite" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

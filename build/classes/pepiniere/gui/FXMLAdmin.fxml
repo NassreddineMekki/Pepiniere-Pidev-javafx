@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLAdminController">
+   <children>
+      <AnchorPane prefHeight="214.0" prefWidth="1004.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <Circle fx:id="cir" fill="DODGERBLUE" layoutX="133.0" layoutY="92.0" radius="71.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="name" layoutX="111.0" layoutY="167.0" text="label">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="380.0" layoutX="375.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="864.0" layoutY="45.0" mnemonicParsing="false" onAction="#deconectAction" style="-fx-background-color: #39A67b;" text="&lt; Deconnect">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="57.0" layoutY="281.0" text="Notification" textFill="MAROON">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="183.0" layoutY="337.0" prefHeight="2.0" prefWidth="742.0" />
+      <Label fx:id="nbStoreBlock" layoutX="189.0" layoutY="309.0" text="Label">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="78.0" layoutY="423.0" prefHeight="3.0" prefWidth="860.0" />
+      <Label layoutX="240.0" layoutY="243.0" text="Bienvenu : " textFill="MAROON">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin" layoutX="365.0" layoutY="250.0" text="Label" textFill="MAROON" />
+      <ImageView fx:id="stor" fitHeight="112.0" fitWidth="200.0" layoutX="108.0" layoutY="467.0" onMousePressed="#listAllUser" onMouseReleased="#listStorebloked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pngtree-color-chart-png-clipart_1501229.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="storb" fitHeight="150.0" fitWidth="200.0" layoutX="674.0" layoutY="492.0" onMouseReleased="#listStorebloked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/l_c6863146f94b19f03466df2f75a3886a.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="185.0" layoutX="413.0" layoutY="467.0" onMouseReleased="#statAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/statistique-png-5.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="598.0" text="List User" />
+      <Label layoutX="460.0" layoutY="598.0" text="Statistique" />
+      <Label layoutX="704.0" layoutY="598.0" text="liste des boutique bloqués" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.AjoutEventController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="222.0" prefWidth="1207.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <Label fx:id="name" layoutX="62.0" layoutY="153.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="mail" layoutX="62.0" layoutY="182.0" text="Boutique" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="124.0" layoutY="260.0" text="Nom de l'evenement" />
+      <Label layoutX="114.0" layoutY="323.0" text="Date debut de l'evenement " />
+      <Label layoutX="133.0" layoutY="375.0" text="Description" />
+      <Label layoutX="124.0" layoutY="451.0" text="Adresse de l'evenement" />
+      <Label layoutX="126.0" layoutY="500.0" text="Frais de particpation" />
+      <Label layoutX="124.0" layoutY="549.0" text="Nombre de participants" />
+      <TextField fx:id="Nom_event" layoutX="325.0" layoutY="269.0" prefHeight="26.0" prefWidth="299.0" />
+      <TextField fx:id="adresse_event" layoutX="331.0" layoutY="438.0" prefHeight="26.0" prefWidth="307.0" />
+      <TextField fx:id="nbre_p" layoutX="328.0" layoutY="549.0" prefHeight="26.0" prefWidth="299.0" />
+      <TextField fx:id="frais_p" layoutX="334.0" layoutY="491.0" prefHeight="26.0" prefWidth="314.0" />
+      <DatePicker fx:id="date_deb" layoutX="328.0" layoutY="319.0" prefHeight="26.0" prefWidth="299.0" />
+      <TextArea fx:id="Description" layoutX="328.0" layoutY="354.0" prefHeight="65.0" prefWidth="314.0" />
+      <Button layoutX="362.0" layoutY="644.0" mnemonicParsing="false" onAction="#ajouterEvent" text="Valider" />
+      <Button layoutX="194.0" layoutY="606.0" mnemonicParsing="false" onAction="#addImg" text="Image" />
+      <TextField fx:id="txtimg" layoutX="341.0" layoutY="606.0" />
+      <Button layoutX="25.0" layoutY="590.0" mnemonicParsing="false" onAction="#RETOUR" prefHeight="82.0" prefWidth="98.0" style="-fx-background-color: #f4f2f2;">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/35932668-icône-flèche-de-retour-signe.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Pepiniere-Pidev-javafx.jnlp">
+  <information>
+    <title>Pepiniere-Pidev-javafx</title>
+    <vendor>Nassreddine</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Pepiniere-Pidev-javafx.jar" size="29331388" download="eager" />
+    <jar href="lib\PDFOne.jar" size="2540913" download="eager" />
+    <jar href="lib\PDFOneJavaViewer_Executable.jar" size="115953" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\bcmail-jdk14.jar" size="490168" download="eager" />
+    <jar href="lib\bcprov-ext-jdk14.jar" size="1835044" download="eager" />
+    <jar href="lib\bcprov-jdk14.jar" size="1824421" download="eager" />
+    <jar href="lib\io-7.0.0.jar" size="627553" download="eager" />
+    <jar href="lib\io-7.0.1.jar" size="641440" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\jfoenix-1.4.0.jar" size="2363143" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2384520" download="eager" />
+    <jar href="lib\kernel-7.0.0.jar" size="967008" download="eager" />
+    <jar href="lib\kernel-7.0.1.jar" size="992958" download="eager" />
+    <jar href="lib\layout-7.0.0.jar" size="220351" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\notification-4.4.6.jar" size="2462" download="eager" />
+    <jar href="lib\slf4j-api-1.7.13.jar" size="33088" download="eager" />
+    <jar href="lib\xfe_jdk-14.jar" size="317212" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Pepiniere-Pidev-javafx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pepiniere.gui.PepinierePidevJavafx"  name="Pepiniere-Pidev-javafx" />
+  <update check="always"/>
+</jnlp>

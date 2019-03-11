@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.PlanteClientsController">
+    <children>
+           <Pane layoutX="-1.0" prefHeight="222.0" prefWidth="1200.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            </children>
+      </Pane>
+        
+      <JFXListView fx:id="ListView_Produits" layoutX="54.0" layoutY="287.0" prefHeight="381.0" prefWidth="1097.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="262.0" prefHeight="57.0" prefWidth="689.0">
+         </HBox>
+      <HBox alignment="BOTTOM_LEFT" layoutX="949.0" layoutY="-3.0" prefHeight="57.0" prefWidth="224.0">
+         
+      </HBox>
+      <ImageView fitHeight="69.0" fitWidth="55.0" onDragDetected="#retoureAccueil" onMousePressed="#retoureAccueil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retoure.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="539.0" layoutY="238.0" text="liste des Plantes" textFill="#9a1f1f">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

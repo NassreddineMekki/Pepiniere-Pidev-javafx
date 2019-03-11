@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLConsulterProduitSelonDateController">
+   <children>
+      <Pane prefHeight="187.0" prefWidth="981.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <Circle fx:id="profil" fill="DODGERBLUE" layoutX="114.0" layoutY="75.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="150.0" fitWidth="306.0" layoutX="357.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="panier" fitHeight="87.0" fitWidth="96.0" layoutX="860.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="name" layoutX="88.0" layoutY="152.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="panieImg" fitHeight="87.0" fitWidth="104.0" layoutX="830.0" layoutY="82.0" onMouseReleased="#consultPanier" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="843.0" layoutY="38.0" mnemonicParsing="false" onAction="#buckAction" style="-fx-background-color: #39A67b;" text="&lt; Retour">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="16.0" layoutY="264.0" prefHeight="427.0" prefWidth="948.0">
+         <content>
+            <VBox fx:id="vb" prefHeight="404.0" prefWidth="927.0" />
+         </content>
+      </ScrollPane>
+      <Slider fx:id="sd" layoutX="144.0" layoutY="209.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" prefHeight="14.0" prefWidth="554.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="37.0" layoutY="208.0" text="Choisir date" textFill="MAROON">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="209.0" text="Produit ajouter depuis" textFill="MAROON">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl" layoutX="865.0" layoutY="209.0" text="0" textFill="#e20a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="909.0" layoutY="210.0" text="jours" textFill="MAROON">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="800.0" prefWidth="1100.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.Ajouter_annonceController">
+    <stylesheets>
+        <URL value="@ajouter_annonce.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="1.0" layoutY="1.0" prefHeight="800.0" prefWidth="1388.0">
+         <children>
+            <TabPane layoutX="5.0" layoutY="2.0" prefHeight="800.0" prefWidth="1389.0" style="-fx-region-background: #ffffff;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Ajouter annonce">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="582.0" prefWidth="881.0">
+                           <children>
+                              <Label layoutX="47.0" layoutY="339.0" text="prix" textFill="#f5f2f2">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="ajouter" layoutX="495.0" layoutY="602.0" mnemonicParsing="false" onAction="#ajouterAnnonce" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: #DEB887;" text="ajouter" textOverrun="LEADING_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fx:id="h" fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-plus-24.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <Blend opacity="0.0" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="annuler" layoutX="260.0" layoutY="604.0" mnemonicParsing="false" onAction="#annulerr" prefHeight="33.0" prefWidth="94.0" style="-fx-background-color: #DEB887;" text="annuler">
+                                 <graphic>
+                                    <ImageView fx:id="g" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-delete-24.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label fx:id="lbl" layoutX="329.0" layoutY="422.0" text="0" textFill="#97662b">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtimg" layoutX="199.0" layoutY="94.0" style="-fx-background-color: #006400;" />
+                              <HBox layoutX="2.0" layoutY="1.0" prefHeight="30.0" prefWidth="770.0" style="-fx-background-color: #DEB887;">
+                                 <children>
+                                    <ImageView fx:id="j" fitHeight="23.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-home-filled-50%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="controlSaisie" layoutX="255.0" layoutY="568.0" prefHeight="36.0" prefWidth="430.0" textFill="#39a67b">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="500.0" layoutY="462.0" mnemonicParsing="false" onAction="#addImage" prefHeight="40.0" prefWidth="248.0" style="-fx-background-color: #F5DEB3;" text="choisir image">
+                                 <graphic>
+                                    <ImageView fx:id="i" fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-xlarge-icons-filled-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ComboBox fx:id="combotype" layoutX="497.0" layoutY="373.0" prefHeight="25.0" prefWidth="249.0" promptText="choisir type annonce" style="-fx-background-color: #F5DEB3;" />
+                              <Slider fx:id="prix" layoutX="68.0" layoutY="416.0" max="500.0" opacity="0.87" prefHeight="38.0" prefWidth="241.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #F5DEB3;" />
+                              <TextField fx:id="type" layoutX="71.0" layoutY="328.0" prefHeight="41.0" prefWidth="236.0" promptText="type de produit" style="-fx-background-color: #F5DEB3;" />
+                              <DatePicker fx:id="dat" layoutX="67.0" layoutY="502.0" prefHeight="25.0" prefWidth="229.0" promptText="date" style="-fx-background-color: #DEB887;" />
+                              <TextField fx:id="description" layoutX="495.0" layoutY="262.0" prefHeight="66.0" prefWidth="248.0" promptText="description" style="-fx-background-color: #F5DEB3;" />
+                              <TextField fx:id="nom_produit" layoutX="75.0" layoutY="262.0" prefHeight="50.0" prefWidth="213.0" promptText="nom produit" style="-fx-background-color: #F5DEB3;" />
+                              <ImageView fx:id="l" fitHeight="28.0" fitWidth="55.0" layoutX="2.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-administrator-male-30.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="354.0" layoutY="421.0" text="dt" textFill="#a47336">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="-12.0" layoutY="181.0" prefHeight="48.0" prefWidth="1403.0" style="-fx-background-color: #f8f2d2;" />
+                              <Label fx:id="cst" layoutX="98.0" layoutY="317.0" prefHeight="22.0" prefWidth="181.0" text="pas de produit a inserer" textFill="#2b9a63" visible="false">
+                                 <font>
+                                    <Font name="Bernard MT Condensed" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="856.0" layoutY="297.0" opacity="0.42" prefHeight="278.0" prefWidth="401.0" rotate="-66.0" text="pépiniére" textFill="#044a2a">
+                                 <font>
+                                    <Font name="Bodoni MT" size="88.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              
+                           </cursor>
+                           <effect>
+                              <Lighting diffuseConstant="1.56" specularConstant="0.18" specularExponent="25.12" surfaceScale="4.99">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                   
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="liste_Annonce">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tab_annonce" layoutX="92.0" layoutY="195.0" prefHeight="360.0" prefWidth="514.0" style="-fx-background-color: #D2B48C;">
+                                <columns>
+                                  <TableColumn fx:id="typ" prefWidth="75.0" text="type" />
+                                    <TableColumn fx:id="descriptio" prefWidth="75.0" text="description" />
+                                    <TableColumn fx:id="date_annonce" prefWidth="75.0" text="date d'annonce" />
+                                    <TableColumn fx:id="prixx" prefWidth="75.0" text="prix" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="617.0" layoutY="604.0" mnemonicParsing="false" onAction="#supprimerAnnonce" prefHeight="65.0" prefWidth="151.0" style="-fx-background-color: #DEB887;" text="supprimer" textFill="#0d0d0d" />
+                              <ImageView fx:id="n" fitHeight="30.0" fitWidth="40.0" layoutX="625.0" layoutY="622.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-trash-can-48.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="rech" layoutX="154.0" layoutY="637.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Liste_Annonce_Client">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: #8DEBE6;">
+                           <children>
+                              <ScrollPane fx:id="pane" layoutX="152.0" layoutY="231.0" prefHeight="389.0" prefWidth="392.0" style="-fx-background-color: #DEB887;">
+                                 <content>
+                                    <VBox fx:id="vb" prefHeight="387.0" prefWidth="388.0" style="-fx-background-color: #DEB887;" />
+                                 </content>
+                                 <effect>
+                                    <SepiaTone level="0.0" />
+                                 </effect>
+                              </ScrollPane>
+                              <Button layoutX="305.0" layoutY="685.0" mnemonicParsing="false" onAction="#modifAction" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: #DEB887;" text="modifier" textFill="#000302">
+                                 <font>
+                                    <Font name="Lucida Fax Demibold" size="12.0" />
+                                 </font></Button>
+                              <AnchorPane layoutX="731.0" layoutY="213.0" prefHeight="544.0" prefWidth="560.0" style="-fx-background-image: #8DEBE6;">
+                                 <children>
+                                    <Button layoutX="139.0" layoutY="438.0" mnemonicParsing="false" onAction="#addImage" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: #DEB887;" text="choisir image">
+                                       <graphic>
+                                          <ImageView fx:id="i1" fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image/icons8-xlarge-icons-filled-50.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Slider fx:id="modifprix" layoutX="137.0" layoutY="354.0" max="500.0" opacity="0.87" prefHeight="38.0" prefWidth="268.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #DEB887;" />
+                                    <DatePicker fx:id="modifdat" layoutX="142.0" layoutY="288.0" prefHeight="25.0" prefWidth="261.0" promptText="date" style="-fx-background-color: #DEB887;" />
+                                    <TextField fx:id="modiftypeprod" layoutX="137.0" layoutY="82.0" prefHeight="41.0" prefWidth="268.0" promptText="type de produit" />
+                                    <TextField fx:id="modifdesc" layoutX="139.0" layoutY="154.0" prefHeight="76.0" prefWidth="267.0" promptText="description" />
+                                    <TextField fx:id="modifnom" layoutX="138.0" layoutY="27.0" prefHeight="25.0" prefWidth="268.0" promptText="nom produit" />
+                                    <Label fx:id="modiflbl" layoutX="424.0" layoutY="365.0" text="0" textFill="#087246">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                    <Label layoutX="459.0" layoutY="365.0" text="dt" textFill="#0a653f">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button contentDisplay="TOP" graphicTextGap="0.0" layoutX="474.0" layoutY="685.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#supprimerAnnonce1" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #DEB887;" text="supprimer" textOverrun="CLIP">
+                                 <effect>
+                                    <Blend mode="DARKEN" opacity="0.37" />
+                                 </effect>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="textmodif1" disable="true" layoutX="105.0" layoutY="673.0" visible="false" />
+                              <TextField fx:id="textmodif" layoutX="105.0" layoutY="640.0" visible="false" />
+                              <Label layoutX="149.0" layoutY="179.0" prefHeight="52.0" prefWidth="1240.0" style="-fx-background-color: #f8f2d2;" text="Listes des produits" textAlignment="CENTER" textFill="#0d9a79">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="1.0" layoutY="178.0" prefHeight="53.0" prefWidth="150.0" style="-fx-background-color: #f8f2d2;" />
+                              <Label layoutX="-4.0" layoutY="232.0" prefHeight="538.0" prefWidth="83.0" style="-fx-background-color: #f8f2d2;" />
+                              <Label layoutX="497.0" layoutY="368.0" opacity="0.16" prefHeight="177.0" prefWidth="412.0" rotate="-58.0" text="pépiniére" textFill="#39a67b">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="96.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="combotype1" layoutX="571.0" layoutY="241.0" prefHeight="25.0" prefWidth="265.0" promptText="choisir type annonce" style="-fx-background-color: #DEB887;" />
+                           </children>
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="0.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                   
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <cursor>
+                              
+                           </cursor>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+      <Pane layoutY="33.0" prefHeight="177.0" prefWidth="1396.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="304.0" layoutX="612.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="106.0" layoutX="1282.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/house-with-a-garden.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="ima" fill="DODGERBLUE" layoutX="105.0" layoutY="77.0" radius="65.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="panier" fitHeight="74.0" fitWidth="88.0" layoutX="1270.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

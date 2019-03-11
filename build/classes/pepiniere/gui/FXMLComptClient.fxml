@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="929.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLComptClientController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="200.0" prefWidth="932.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <Circle fx:id="profilImg" fill="DODGERBLUE" layoutX="120.0" layoutY="82.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="name" layoutX="106.0" layoutY="158.0" text="Label" />
+            <ImageView fitHeight="150.0" fitWidth="314.0" layoutX="318.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="panieImg" fitHeight="76.0" fitWidth="98.0" layoutX="806.0" layoutY="89.0" onMouseReleased="#consulPanieAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/shopping-cart-empty-side-view.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="806.0" layoutY="32.0" mnemonicParsing="false" onAction="#buckAction" style="-fx-background-color: #39A67b;" text="&lt; retour">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="36.0" layoutY="226.0" text="Les Produits ajoutés aores votre derniére deconnection" textFill="MAROON">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="111.0" layoutY="270.0" prefHeight="382.0" prefWidth="704.0">
+         <content>
+            <VBox fx:id="vb" prefHeight="380.0" prefWidth="700.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="271.0" layoutY="672.0" mnemonicParsing="false" onAction="#confirmAction" style="-fx-background-color: #39A67b;" text="Consulter produit selon la date d'ajout">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

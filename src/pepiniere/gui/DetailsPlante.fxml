@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.DetailsPlanteController">
+ <children>
+      <Label layoutX="6.0" layoutY="216.0" prefHeight="33.0" prefWidth="57.0" text="Nom">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="2.0" layoutY="262.0" text="Auteur">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="362.0" text="Prix">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="426.0" text="Quantite">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="307.0" text="Titre">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="479.0" text="Description">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="labelNom" layoutX="107.0" layoutY="224.0" prefHeight="17.0" prefWidth="78.0" textFill="#75b527">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAuteur" layoutX="111.0" layoutY="262.0" prefHeight="17.0" prefWidth="163.0" text=" " />
+      <Label fx:id="labelTitre" layoutX="111.0" layoutY="307.0" prefHeight="17.0" prefWidth="171.0" text=" " />
+      <Label fx:id="labelPrix" layoutX="111.0" layoutY="362.0" prefHeight="17.0" prefWidth="163.0" />
+      <Label fx:id="labelQte" layoutX="110.0" layoutY="430.0" prefHeight="17.0" prefWidth="151.0" />
+      <Label fx:id="labelDescription" layoutX="125.0" layoutY="479.0" prefHeight="84.0" prefWidth="171.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pepiniere-Pidev-javafx/src/pepiniere/gui/images/logoLivre.jpg" />
+         </image>
+      </ImageView>
+       </children>
+</AnchorPane>

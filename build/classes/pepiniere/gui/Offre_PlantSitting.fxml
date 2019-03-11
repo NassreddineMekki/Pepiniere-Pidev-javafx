@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="PlantSitting" prefHeight="796.0" prefWidth="1110.0" style="-fx-background-image: images\0.jpg;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.Offre_PlantSittingController">
+   <children>
+      <AnchorPane fx:id="Reservation" layoutX="137.0" layoutY="206.0" prefHeight="597.0" prefWidth="970.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <ScrollPane fx:id="scrollPane1" layoutX="235.0" layoutY="119.0" prefHeight="150.0" prefWidth="174.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="189.0">
+                     <children>
+                        <VBox fx:id="vb11" prefHeight="303.0" prefWidth="164.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <TextField fx:id="quantite_local" disable="true" layoutX="324.0" layoutY="423.0" />
+            <Label layoutX="30.0" layoutY="427.0" text="Nombre de plante que le local peut supporter" />
+            <Button fx:id="Ajouter_Reservation" layoutX="467.0" layoutY="502.0" mnemonicParsing="false" text="Ajouter" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Menu" layoutY="205.0" prefHeight="598.0" prefWidth="138.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView id="Offre_btn" fx:id="gestionoffre" fitHeight="123.0" fitWidth="153.0" layoutY="7.0" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Plane-Airplane-Flying-Passenger-Transport-Voyage-512.png" />
+               </image>
+            </ImageView>
+            <ImageView id="Service_btn" fx:id="gestionservice" fitHeight="123.0" fitWidth="142.0" layoutY="137.0" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/service-png-6.png" />
+               </image>
+            </ImageView>
+            <ImageView id="Jardin_btn" fx:id="gestionjardin" fitHeight="134.0" fitWidth="142.0" layoutX="2.0" layoutY="278.0" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/house-with-a-garden.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="206.0" prefWidth="1121.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <Label layoutX="38.0" layoutY="154.0" text="Mahmoud Chebil" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="175.0" text="Client" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="988.0" layoutY="20.0" mnemonicParsing="false" onAction="#buck" style="-fx-background-color: #39A67b;" text="&lt; Retour">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="panier" fitHeight="66.0" fitWidth="108.0" layoutX="1000.0" layoutY="81.0" onMouseReleased="#panierAction" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="918.0" layoutY="153.0" mnemonicParsing="false" onAction="#prfilAction" style="-fx-background-color: #39A67b;" text="Profile">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="Interface_Ajout_Offre" layoutX="137.0" layoutY="207.0" prefHeight="595.0" prefWidth="971.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="149.0" layoutY="72.0" text="Adresse" />
+            <Label layoutX="131.0" layoutY="127.0" text="Date debut" />
+            <Label layoutX="141.0" layoutY="184.0" text="Date fin" />
+            <Label layoutX="148.0" layoutY="233.0" text="Prix" />
+            <Label layoutX="138.0" layoutY="284.0" text="Quantite" />
+            <Label layoutX="134.0" layoutY="342.0" text="Description" />
+            <TextField fx:id="localisation_ajout" layoutX="219.0" layoutY="67.0" />
+            <TextArea fx:id="description_ajout" layoutX="213.0" layoutY="324.0" prefHeight="98.0" prefWidth="200.0" />
+            <TextField fx:id="prix_ajout" layoutX="219.0" layoutY="226.0" />
+            <DatePicker fx:id="date_debut_ajout" layoutX="222.0" layoutY="122.0" />
+            <DatePicker fx:id="date_fin_ajout" layoutX="222.0" layoutY="179.0" />
+            <ComboBox fx:id="quantite_max_ajout" layoutX="219.0" layoutY="279.0" prefWidth="150.0" visibleRowCount="6" />
+            <Button layoutX="362.0" layoutY="469.0" mnemonicParsing="false" onAction="#AjouterOffre_PlantSitting" text="Ajouter" />
+            <Button layoutX="450.0" layoutY="469.0" mnemonicParsing="false" text="Annuler" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Interface_Ajout_Service" layoutX="135.0" layoutY="206.0" prefHeight="594.0" prefWidth="970.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="149.0" layoutY="49.0" text="Adresse" />
+            <Label layoutX="131.0" layoutY="104.0" text="Date debut" />
+            <Label layoutX="141.0" layoutY="161.0" text="Date fin" />
+            <Label layoutX="148.0" layoutY="210.0" text="Prix" />
+            <Label layoutX="134.0" layoutY="470.0" text="Description" />
+            <TextField fx:id="localisation_ajout1" layoutX="219.0" layoutY="44.0" />
+            <TextArea fx:id="description_ajout1" layoutX="207.0" layoutY="460.0" prefHeight="98.0" prefWidth="200.0" />
+            <TextField fx:id="prix_ajout1" layoutX="219.0" layoutY="203.0" />
+            <DatePicker fx:id="date_debut_ajout1" layoutX="222.0" layoutY="99.0" />
+            <DatePicker fx:id="date_fin_ajout1" layoutX="222.0" layoutY="156.0" />
+            <Button layoutX="362.0" layoutY="570.0" mnemonicParsing="false" onAction="#AjouterService_PlantSitting" text="Ajouter" />
+            <Button layoutX="450.0" layoutY="570.0" mnemonicParsing="false" text="Annuler" />
+            <Label layoutX="135.0" layoutY="351.0" />
+            <Button layoutX="450.0" layoutY="325.0" mnemonicParsing="false" text="Ajouter Plante" />
+            <ScrollPane fx:id="scrollPane" layoutX="206.0" layoutY="250.0" prefHeight="150.0" prefWidth="174.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="189.0">
+                     <children>
+                        <VBox fx:id="vb1" layoutX="-2.0" prefHeight="303.0" prefWidth="164.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Interface_Ajout_Jardin" layoutX="137.0" layoutY="206.0" prefHeight="596.0" prefWidth="985.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="149.0" layoutY="116.0" text="Adresse" />
+            <Label layoutX="131.0" layoutY="171.0" text="Date debut" />
+            <Label layoutX="141.0" layoutY="228.0" text="Date fin" />
+            <Label layoutX="129.0" layoutY="277.0" text="Prix demande" />
+            <Label layoutX="134.0" layoutY="340.0" text="Description" />
+            <TextField fx:id="localisation_ajout2" layoutX="219.0" layoutY="111.0" />
+            <TextArea fx:id="description_ajout2" layoutX="213.0" layoutY="325.0" prefHeight="98.0" prefWidth="200.0" />
+            <TextField fx:id="prix_ajout2" layoutX="219.0" layoutY="270.0" />
+            <DatePicker fx:id="date_debut_ajout2" layoutX="222.0" layoutY="166.0" />
+            <DatePicker fx:id="date_fin_ajout2" layoutX="222.0" layoutY="223.0" />
+            <Button layoutX="362.0" layoutY="444.0" mnemonicParsing="false" onAction="#AjouterOffre_Jardin" text="Ajouter" />
+            <Button layoutX="450.0" layoutY="444.0" mnemonicParsing="false" text="Annuler" />
+            <Label layoutX="135.0" layoutY="351.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Interface_Service" layoutX="136.0" layoutY="207.0" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" prefHeight="595.0" prefWidth="974.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Button fx:id="AjouterService" layoutX="489.0" layoutY="380.0" mnemonicParsing="false" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" text="Ajouter" />
+            <TableView fx:id="taboffre2" layoutX="12.0" layoutY="14.0" prefHeight="250.0" prefWidth="946.0">
+               <columns>
+                  <TableColumn fx:id="localisation2" prefWidth="123.20001220703125" text="Localisation" />
+                  <TableColumn fx:id="date_debut2" prefWidth="161.59996032714844" text="Date debut" />
+                  <TableColumn fx:id="date_fins2" prefWidth="157.33334350585938" text="Date fin" />
+                  <TableColumn fx:id="prix2" prefWidth="156.79998779296875" text="Prix" />
+                  <TableColumn fx:id="description2" prefWidth="213.5999755859375" text="Description" />
+                  <TableColumn fx:id="quantite_max2" prefWidth="138.400146484375" text="Quantite*" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Interface_Jardin" layoutX="136.0" layoutY="207.0" prefHeight="596.0" prefWidth="974.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <TableView fx:id="taboffre3" layoutX="12.0" layoutY="14.0" prefHeight="250.0" prefWidth="946.0">
+               <columns>
+                  <TableColumn fx:id="localisation3" prefWidth="177.06668090820312" text="Localisation" />
+                  <TableColumn fx:id="date_debut3" prefWidth="216.53334045410156" text="Date debut" />
+                  <TableColumn fx:id="date_fins3" prefWidth="194.93328857421875" text="Date fin" />
+                  <TableColumn fx:id="prix3" prefWidth="136.5333251953125" text="Prix" />
+                  <TableColumn fx:id="description3" prefWidth="223.7333984375" text="Description" />
+               </columns>
+            </TableView>
+            <Button fx:id="AjouterJardin" layoutX="489.0" layoutY="423.0" mnemonicParsing="false" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" text="Ajouter" />
+            <JFXTextField fx:id="recherche" layoutX="89.0" layoutY="294.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Interface_Offre" layoutX="135.0" layoutY="207.0" onDragDetected="#handleButtonAction" onMousePressed="#handleButtonAction" prefHeight="595.0" prefWidth="972.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <TableView fx:id="taboffre" layoutX="12.0" layoutY="14.0" prefHeight="250.0" prefWidth="946.0">
+              <columns>
+                <TableColumn fx:id="localisation" prefWidth="156.53341674804688" text="C1" />
+                <TableColumn fx:id="date_debut" prefWidth="153.06655883789062" text="C2" />
+                  <TableColumn fx:id="date_fins" prefWidth="149.33331298828125" text="C1" />
+                  <TableColumn fx:id="prix" prefWidth="173.33331298828125" text="C1" />
+                  <TableColumn fx:id="description" prefWidth="147.7332763671875" text="C1" />
+                  <TableColumn fx:id="quantite_max" prefWidth="168.5333251953125" text="C1" />
+              </columns>
+            </TableView>
+            <Button fx:id="AjouterOffre" layoutX="70.0" layoutY="285.0" mnemonicParsing="false" onMousePressed="#handleButtonAction" prefHeight="31.0" prefWidth="82.0" text="Ajouter" />
+            <JFXMasonryPane layoutX="287.0" layoutY="339.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

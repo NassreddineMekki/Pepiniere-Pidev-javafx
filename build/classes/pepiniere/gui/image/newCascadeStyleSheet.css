@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 févr. 2019, 00:32:07
+    Author     : Mahmoud
+*/
+.text-field{
+   -fx-font-family: "Roboto Italic";
+   -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: grey;
+   -fx-border-width: 2;
+   -fx-border-radius: 1;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-fill: grey;
+   -fx-border-color: white;
+   
+}
+.button
+{
+    -fx-background-color: #202332;
+}

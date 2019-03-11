@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1016.0" prefWidth="1573.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLAcceuil_ClientController">
+    <children>
+      <Pane layoutX="-1.0" prefHeight="206.0" prefWidth="1573.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="568.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <ImageView fx:id="panel" fitHeight="92.0" fitWidth="91.0" layoutX="1427.0" layoutY="81.0" onMouseReleased="#popupActoin" />
+            <Label fx:id="name" layoutX="75.0" layoutY="149.0" text="label" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="mail" layoutX="77.0" layoutY="175.0" text="Client" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="1387.0" layoutY="20.0" mnemonicParsing="false" onAction="#deconectAction" style="-fx-background-color: #39A67b;" text="&lt; Déconnecter">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="45.0" layoutY="650.0" prefHeight="279.0" prefWidth="1483.0">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="212.0" layoutX="318.0" layoutY="43.0" onMouseReleased="#palanteSttingAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/téléchargement1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="184.0" fitWidth="173.0" layoutX="1296.0" layoutY="31.0" onMouseReleased="#annonceAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/annonce-png.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="240.0" fitWidth="241.0" layoutX="-32.0" layoutY="14.0" onMouseReleased="#iventAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/événement-png.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="236.0" text="Nos Evenments">
+               <font>
+                  <Font name="Roboto Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="318.0" layoutY="237.0" prefHeight="35.0" prefWidth="212.0" text="Service PlantSitting">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="1306.0" layoutY="224.0" text="Nos Annonces">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="225.0" fitWidth="275.0" layoutX="661.0" layoutY="16.0" onMouseReleased="#produitAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/produit-png.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="750.0" layoutY="228.0" prefHeight="35.0" prefWidth="153.0" text="Nos Produis">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1008.0" layoutY="53.0" onMouseReleased="#commandAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/téléchargement.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1004.0" layoutY="219.0" text="Vos Commande">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="315.0" layoutY="226.0" prefHeight="82.0" prefWidth="937.0">
+         <children>
+            <Label fx:id="lbl" layoutX="241.0" layoutY="15.0" prefHeight="45.0" prefWidth="133.0" text="Label" textFill="MAROON">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="14.0" text="Bonjour " textFill="MAROON">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="374.0" layoutY="14.0" text=",Que-voulez-vous-faire-aujourd'hui?" textFill="MAROON">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="35.0" layoutY="632.0" prefHeight="7.0" prefWidth="1483.0" />
+      <Label layoutX="84.0" layoutY="364.0" prefHeight="18.0" prefWidth="122.0" text="Notification" textFill="MAROON">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="257.0" layoutY="445.0" prefHeight="18.0" prefWidth="1058.0" />
+      <Label fx:id="nbCmd" layoutX="282.0" layoutY="423.0" text="Label">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab1" layoutX="315.0" layoutY="467.0" text="- Label">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font></Label>
+      <Label fx:id="lab2" layoutX="316.0" layoutY="499.0" text="- Label" textFill="#ed0000">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

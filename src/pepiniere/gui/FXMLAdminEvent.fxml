@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLAdminEventController">
+   <children>
+      <TableView fx:id="tabb" layoutX="23.0" layoutY="272.0" prefHeight="306.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="Nom_event" />
+          <TableColumn fx:id="col_date_deb" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="col_description" prefWidth="123.19998168945312" text="Description" />
+            <TableColumn fx:id="col_adresse" prefWidth="103.20001220703125" text="Adresse" />
+            <TableColumn fx:id="frais_part" minWidth="2.4000244140625" prefWidth="179.19998168945312" text="Frais de participation" />
+            <TableColumn fx:id="Nbre_participant" prefWidth="150.39996337890625" text="Nbre de participation" />
+            <TableColumn fx:id="id_event" minWidth="0.0" prefWidth="7.19989013671875" text="id_event" />
+        </columns>
+      </TableView>
+      <Button layoutX="802.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="122.0" prefWidth="106.0" style="-fx-background-color: #f4f2f2;">
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/627249-delete3-512.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Pane prefHeight="222.0" prefWidth="1213.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <Label fx:id="name" layoutX="62.0" layoutY="153.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="mail" layoutX="62.0" layoutY="182.0" text="Boutique" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="88.0" layoutY="588.0" mnemonicParsing="false" onAction="#retourAdmin" prefHeight="94.0" prefWidth="89.0" style="-fx-background-color: #f4f2f2;">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/35932668-icône-flèche-de-retour-signe.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

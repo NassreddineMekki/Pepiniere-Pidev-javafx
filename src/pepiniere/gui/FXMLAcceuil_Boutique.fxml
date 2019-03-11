@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="831.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pepiniere.gui.FXMLAcceuil_BoutiqueController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="222.0" prefWidth="1102.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <Label fx:id="name" layoutX="62.0" layoutY="153.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="mail" layoutX="62.0" layoutY="182.0" text="Boutique" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="4.0" layoutY="283.0" prefHeight="311.0" prefWidth="1102.0">
+         <children>
+            <ImageView fx:id="prod" fitHeight="233.0" fitWidth="257.0" layoutX="613.0" layoutY="18.0" onMouseReleased="#produitAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/produit-png.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="event" fitHeight="240.0" fitWidth="241.0" layoutX="226.0" layoutY="14.0" onMouseReleased="#eventAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/événement-png.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="266.0" layoutY="254.0" text="Vos Evenments">
+               <font>
+                  <Font name="Roboto Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="686.0" layoutY="243.0" text="Vos Produits">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="228.0" layoutY="230.0" prefHeight="81.0" prefWidth="655.0">
+         <children>
+            <Label fx:id="lll" layoutX="180.0" layoutY="20.0" text="Label" textFill="#cf001b">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="l1" layoutX="65.0" layoutY="19.0" text="Bienvenu " textFill="MAROON">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="l2" layoutX="254.0" layoutY="21.0" text="sur votre platforme" textFill="MAROON">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="pane" fitHeight="92.0" fitWidth="91.0" layoutX="977.0" layoutY="49.0" onMouseReleased="#paneActoin">
+         <image>
+            <Image url="@images/shopping-cart-empty-side-view.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="68.0" layoutY="607.0" prefHeight="200.0" prefWidth="990.0">
+         <children>
+            <Label layoutX="28.0" layoutY="29.0" text="Notifications" textFill="#cf001b">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children> 
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="pepiniere.gui.ListeProduitBoutiqueClientController">
+<children>
+      <Pane layoutX="-1.0" prefHeight="222.0" prefWidth="1200.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            </children>
+      </Pane>
+      <ImageView fx:id="plante" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="301.0" onDragDetected="#plante" onMousePressed="#plante" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/plante.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="accessoire" fitHeight="150.0" fitWidth="200.0" layoutX="370.0" layoutY="301.0" onDragDetected="#accessoire" onMousePressed="#accessoire" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/accesoire.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="soins" fitHeight="135.0" fitWidth="157.0" layoutX="648.0" layoutY="309.0" onDragDetected="#soins" onMousePressed="#soins" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/soin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livre" fitHeight="114.0" fitWidth="150.0" layoutX="928.0" layoutY="335.0" onDragDetected="#livre" onMousePressed="#livre" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Sans-titre-1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="135.0" layoutY="449.0" prefHeight="26.0" prefWidth="62.0" text="Plante">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="451.0" text="Accessoire">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="694.0" layoutY="451.0" text="Soins">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="976.0" layoutY="451.0" text="Livre">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+  
+ <ImageView fitHeight="69.0" fitWidth="55.0" onDragDetected="#retoureAccueil" onMousePressed="#retoureAccueil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/retoure.png" />
+         </image>
+      </ImageView>
+</children>
+   
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" style="-fx-background-color: #DCDCDC;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="Gui.Offre_JardinController">
+   <children>
+      <Pane layoutY="348.0" prefHeight="311.0" prefWidth="0.0">
+         <children>
+            <ImageView fitHeight="199.0" fitWidth="212.0" layoutX="448.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Nouveau%20dossier/Esprit/src/GUI/images/téléchargement1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="187.0" fitWidth="173.0" layoutX="830.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Nouveau%20dossier/Esprit/src/GUI/images/annonce-png.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="240.0" fitWidth="241.0" layoutX="43.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Nouveau%20dossier/Esprit/src/GUI/images/événement-png.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="276.0" text="Nos Evenments">
+               <font>
+                  <Font name="Roboto Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="273.0" text="Service PlantSitting">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="854.0" layoutY="269.0" text="Nos Annonces">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="238.0" layoutY="240.0" prefHeight="81.0" prefWidth="0.0">
+         <children>
+            <Label layoutX="6.0" layoutY="37.0" text="Bonjour Mahmoud,Que-voulez-vous-faire-aujourd'hui?" textFill="MAROON">
+               <font>
+                  <Font name="Montserrat Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="-3.0" prefHeight="205.0" prefWidth="1102.0" style="-fx-background-color: #39A67b;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="437.0" layoutX="324.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="image" fill="WHITE" layoutX="99.0" layoutY="81.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: ..\..\..\..\PI-DEV\Sprint1\Esprit\src\GUI\images\produit-png.png;" />
+            <ImageView fitHeight="92.0" fitWidth="91.0" layoutX="967.0" layoutY="39.0">
+               <image>
+                  <Image url="@images/shopping-cart-empty-side-view.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="154.0" text="Mahmoud Chebil" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="175.0" text="Client" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
